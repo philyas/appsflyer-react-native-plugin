@@ -1,5 +1,6 @@
 const withAppsFlyerIos = require('./withAppsFlyerIos');
-module.exports = function withAppsFlyer(config, { shouldUseStrictMode = false }) {
+// Parameter not an object
+module.exports = function withAppsFlyer(config,  shouldUseStrictMode = false ) {
 	config = withAppsFlyerIos(config, shouldUseStrictMode);
 	return config;
 };
